@@ -1,0 +1,639 @@
+/*GENERAL */
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+
+{
+    font-family: Arial,sans-serif;
+    font-size: 15px;
+}
+
+ul
+{
+    list-style: none;
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+a
+{
+    text-decoration: none;
+    color:white;
+}
+.wrapper
+{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+h1
+{
+    font-family:,cursive;
+    font-size: 50px; 
+    color:pink;
+}
+
+h2
+{
+    color:black;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+        
+}
+
+h3
+{
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    margin: 10px 10px 10px 0px;
+}
+
+h4
+{
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    margin: 10px 10px 10px 0px;
+}
+
+h5
+{
+   color:black;
+   font-size: 25px;
+   font-weight: bold;
+   text-transform: uppercase;
+   text-align: center;
+   border-bottom: 1px solid black;
+   padding-bottom: 20px;
+   margin-bottom: 20px;
+    
+}
+p
+{
+    line-height: 20px;
+    color:grey;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.overlay
+{
+    float: left;
+}
+
+small
+{
+    font-size: 13px;
+    font-style: italic;
+    
+}
+/*Menu déroulant css*/
+
+#menu, #menu ul
+{
+padding:0;
+margin:0;
+list-style:none;
+text-align:center;
+}
+#menu li{
+display:inline-block;
+position:relative;
+border-radius:8px 8px 0 0;
+}
+#menu ul li{
+display:inherit;
+border-radius:0;
+}
+#menu ul li:hover
+{
+border-radius:0;
+}
+#menu ul li:last-child{
+border-radius:0 0 8px 8px;
+}
+#menu ul
+{
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+-moz-transition: .8s all .3s;
+-webkit-transition: .8s all .3s;
+transition: .8s all .3s;
+}
+#menu li:hover ul
+{
+max-height:15em;
+}
+
+/* les a href */
+#menu a
+{
+font-weight: bold;
+text-decoration:none;
+display:block;
+padding:8px 20px;
+color:dimgrey;
+font-family:arial;
+font-size: 20px;
+}
+#menu ul a
+{
+padding:8px 0;
+}
+#menu li:hover li a
+{
+color:dimgrey;
+text-transform:inherit;
+}
+#menu li:hover a, #menu li li:hover a
+{
+color:pink;
+}
+
+
+
+    /* HEADER */
+
+header
+{
+    height: 120px;
+}
+
+header h1
+{
+    float: left;
+    margin-top: 32px;
+}
+
+header nav
+{
+    float:right;
+    margin-top: 50px;
+   
+}
+
+nav a
+{
+    color: black
+}
+
+nav a:hover
+{
+    color: blue;
+}
+header nav ul li
+{
+    float:left;
+    display: inline-block;
+    
+}
+
+
+
+/*Main Image*/
+
+#main-image
+{
+  height: 500px;
+  background: url(Images/pieds.jpg) center;
+  
+}
+
+#main-image h2
+{
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 150px 0 40px 0;
+    margin-bottom: 20px;
+}
+
+.button-1
+{
+    width: 250px;
+    height: 40px;
+    background:pink;
+    display: block;
+    color: aliceblue;
+    font-size: 20px;
+    margin:0 auto;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+
+.button-2
+{
+    width: 90px;
+    height: 40px;
+    background:pink;
+    display: block;
+    color: aliceblue;
+    font-size: 20px;
+    margin:0 auto;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 3px;
+    margin-bottom: 30px
+}
+
+.button-1:hover
+{
+    background: #BBF5FF;
+}
+
+.button-2:hover
+{
+    background: #BBF5FF;
+}
+
+/*steps*/
+#steps ul
+ {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+#steps ul li
+{
+  width: 400px;
+  float: left;
+  padding-top: 100px;/* image 100px*/
+  text-align: center;
+  margin-right: 50px;
+    
+}
+
+#step-1
+{
+    background: url(Images/famille.jpg) no-repeat top center;
+    
+}
+
+#step-2
+{
+    background: url(Images/ventre%20-%20Copie%20.jpg)no-repeat top center
+}
+
+
+#steps p
+{
+  margin-bottom: 30px;  
+}
+
+/* possibilities*/
+
+.button-3
+{
+    width: 60px;
+    height: 20px;
+    background:pink;
+    display: block;
+    color: aliceblue;
+    font-size: 10px;
+    margin:0 auto;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    border-style: none ;
+}
+
+.button-3:hover
+{
+    background: #BBF5FF;
+}
+
+#possibilities
+{
+  background-color:#efefef;
+  padding: 30px 0;
+ 
+}
+
+
+#possibilities article
+{
+    width: 470px;
+    height: 270px;
+    float: left;
+    border-radius:10px;
+    
+}
+
+#possibilities article:first-child
+{
+    margin-right: 20px;
+}
+
+#imgpossibilities1
+{
+    background: url(Images/no%C3%A9mie%20-%20Copie.jpg) no-repeat;
+    
+}
+
+#imgpossibilities2
+{
+    background:url(Images/pregnant-3060601_1920.jpg) no-repeat;
+
+}
+
+.overlay
+{
+  background: rgba(255,255,255,0.80);
+  height: 100%;
+  width: 120px;
+  padding: 20px;
+  border-radius:10px 0 0 10px;
+  box-sizing: border-box;
+}
+
+article h4
+{
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+    
+        
+}
+#possibilities p
+{
+    text-align: center;
+  
+}
+
+/*Contact*/
+
+#contact
+
+{
+    margin: 30px 0;
+    text-align: center;
+}
+
+form
+{
+    float: left;
+    margin-top: 50px;
+    padding: 20px;
+    border-right: 1px solid black;
+    
+}
+form h3
+{
+    padding: 30px;
+    font-size: 20px;
+    
+}
+
+#reseau
+{
+    padding: 30px 0;
+    margin-top: 80px;
+}
+
+label
+{
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 10px;
+    color: #777;
+}
+
+input[type="text"]
+{
+    padding:10px;
+    font-size: 10px;
+    margin-right: 20px;
+    border: 2px solid #ddd;
+    border-radius: 2px;
+        
+}
+
+
+textarea
+{
+    padding:10px;
+    font-size: 10px;
+    margin-right: 20px;
+    border: 2px solid #ddd;
+    border-radius: 2px;
+       
+}
+
+form div
+{
+   font-weight: bold;
+    font-size: 15px;
+    margin-right: 10px;
+    color: #777;  
+        
+}
+
+select
+{
+    font-weight: bold;
+    font-size: 13px;
+    margin-right: 10px;
+    color: #777;
+}
+
+#social h4
+{
+  font-size: 20px;  
+}
+
+form  .button-3
+{
+    width: 70px;
+    height: 40px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+/*Réseaux sociaux*/
+
+
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+
+
+#social-platforms {
+  position:relative;
+  top:100px;
+  top:25vh;
+  font-size:1rem;
+  text-align:center;
+  height:250px;
+  overflow:hidden;
+}
+
+/*Pen code from this point on*/
+.btn {
+  clear:both;
+  white-space:nowrap;
+  font-size:.8em;
+  display:inline-block;
+  border-radius:5px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.35);
+  margin: 40px 80px;
+  -webkit-transition:all .5s;
+  -moz-transition:all .5s;
+  transition:all .5s;
+  overflow:hidden
+}
+
+.btn:hover {
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.45);
+}
+
+.btn:focus {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.btn > span,.btn-icon > i {
+  float:left;
+  padding:13px;
+  -webkit-transition:all .5s;
+  -moz-transition:all .5s;
+  transition:all .5s;
+  line-height:1em
+}
+
+.btn > span {
+  padding:14px 18px 16px;
+  white-space:nowrap;
+  color:#FFF;
+  background:#b8b8b8
+}
+
+.btn:focus > span {
+  background:#9a9a9a
+}
+
+.btn-icon > i {
+  border-radius:5px 0 0 5px;
+  position:relative;
+  width:13px;
+  text-align:center;
+  font-size:1.25em;
+  color:#fff;
+  background:#212121
+}
+
+.btn-icon > i:after {
+  content:"";
+  border:8px solid;
+  border-color:transparent transparent transparent #222;
+  position:absolute;
+  top:13px;
+  right:-15px
+}
+
+.btn-icon:hover > i,.btn-icon:focus > i {
+  color:#FFF
+}
+
+.btn-icon > span {
+  border-radius:0 5px 5px 0
+}
+
+/*Facebook*/
+.btn-facebook:hover > i,.btn-facebook:focus > i {
+  color:#3b5998
+}
+
+.btn-facebook > span {
+  background:#3b5998
+}
+
+/*Twitter
+.btn-twitter:hover > i,.btn-twitter:focus > i {
+  color:#55acee
+}
+
+.btn-twitter > span {
+  background:#55acee
+}*/
+
+/*Instagram*/
+.btn-instagram:hover > i,.btn-instagram:focus > i {
+  color:#8a3ab9
+}
+
+.btn-instagram > span {
+  background:#8a3ab9
+}
+
+/*Pinterest
+.btn-pinterest:hover > i,.btn-pinterest:focus > i {
+  color:#cb2028
+}
+
+.btn-pinterest > span {
+  background:#cb2028
+}
+*/
+/*LinkedIn*/
+.btn-linkedin:hover > i,.btn-linkedin:focus > i {
+  color:#007bb6
+}
+
+.btn-linkedin > span {
+  background:#007bb6
+}
+
+
+/*FOOTER*/
+
+footer
+{
+    height: 260px;
+    background-color:#efefef ;
+    
+}
+
+footer h1
+{
+    color: pink;
+    text-align: center;
+    padding-top: 80px;
+    
+}
+
+.copyright
+{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+    color: #777;
+}
+
+
+
+
+
